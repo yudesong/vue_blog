@@ -1,0 +1,18 @@
+/* 引入 Tailwind 基础样式、组件和工具类 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 可选：添加自定义全局样式 */
+@layer base {
+  body {
+    @apply font-sans text-gray-800 bg-gray-50;
+  }
+}
+
+/* 可选：定义可复用组件类 */
+@layer components {
+  .btn-primary {
+    @apply bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition-colors;
+  }
+}
